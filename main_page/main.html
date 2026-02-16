@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Fonte inter-->
+    <link rel="stylesheet" href="main.css">
+    <title>Biblioteca de Trilhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="wrap">
+<!--NavBar da tela principal-->
+        <nav class="topo"></nav>
+
+<!--Trilha na tela principal e seu menu-->
+        <section class="menu-trilha">
+            <a data-modal="modalMain" href="/trail_page/trail.html" class="adicionar" onclick="abrirModalMain()">
+                <p>+</p>
+            </a>
+        </section>
+
+        <!--Criar trilha modal-->
+        <div id="modal-background">
+            <div id="modal">
+                <form action="">
+                    <h1>Criar trilha:</h1>
+                    <input type="text" placeholder="Nome da trilha">
+                    <button>Criar trilha</button>
+                </form>
+            </div>
+
+        </div>
+
+<!--info trilha e outros-->        
+        <div class="menu-conteudo">
+            <div class="divisoes">
+                <div id="div-dados-cima">
+                    <div class="quadrado quadrado-esquerda">
+                        <p>Faltam</p>
+                        <p class="dado">-</p>
+                        <p>Dias</p>
+                    </div>
+                    <div class="quadrado quadrado-direita">
+                        <p>Tarefas</p>
+                        <p class="dado">-</p>
+                        <p>Pendentes</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div id="div-dados-baixo">
+
+                </div>
+            </div>
+
+
+            <div class="divisoes">
+                <form>
+                    <div>
+                        <input id="tarefatexto" type="text" placeholder="Digite uma tarefa">
+                    </div>
+                    <div id="data-enviar">
+                        <input type="date">
+                        <select id="frequencia" name="frequencia">
+                            <option value="Sem Frequencia">Sem Frequência</option>
+                            <option value="diario">Diário</option>
+                            <option value="semanal">Semanal</option>
+                            <option value="mensal">Mensal</option>
+                            <option value="todo_dia_atual">Todo dia (a partir de hoje)</option>
+                            <option value="personalizado">Personalizado</option>
+                        </select>
+                        <button type="button">+</button>
+                    </div>
+                </form>
+                <div id="local-tarefas">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="divisoes">
+                <div id="cronometro">
+
+                </div>
+                <div id="menucronometro">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/trail_page/trail.js"></script>
+</body>
+</html>

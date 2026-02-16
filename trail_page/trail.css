@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter','Roboto', sans-serif;
+    color: #FFFFFF;
+}   
+
+
+
+
+/*
+Linha superior
+*/
+#wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0F1E2B;
+}
+.superior{
+    width: calc(100% - 60px);
+    height: 200px;
+    margin:  30px 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+#principal{
+    width: calc(50% - 30px);
+    height: 100%;
+    background-color: #162C3A;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#titulo{
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    font-weight: initial;
+    padding-left: 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#voltar{
+    display: flex;
+}
+#voltar a button{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #0F1E2B;
+    border: none;
+    border-radius: 3px;
+}
+#voltar button:hover{
+    background-color: #8EC9E6;
+}
+#barracarregamento{
+    height: 30px;
+    width: calc(100% - 15px);
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#barra{
+    width: 100%;
+    height: 100%;
+    background-color: #1E3A4A;
+    margin-left: 10px;
+}
+.info{
+    flex:1;
+    height: 100%;
+    background-color: #162C3A;
+    border-radius: 10px;
+    margin: 0 0 0 30px;
+}
+
+
+
+/*
+Linha inferior com tarefas
+*/
+.inferior{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    margin: 30px;
+    justify-content: start;
+}        
+.abrir{
+    height: 100%;
+    width: 200px;
+    background-color: #162C3A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 100px;
+}
+#adicionar-etapa:hover{
+    background-color: #8EC9E6;
+    cursor: pointer;
+    color: #0F1E2B;
+}
+
+
+
+/*
+modal
+*/
+#addcurso {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#addcurso form {
+    background-color: #1E3A4A;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+#addcurso h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8EC9E6;
+    font-size: 1.8em;
+}
+#addcurso form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#addcurso label {
+    margin-bottom: 6px;
+    color: #8EC9E6;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+#addcurso input[type="text"],
+#addcurso input[type="number"],
+#addcurso select,
+#addcurso input[type="file"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #8EC9E6;
+    background-color: #0F1E2B;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+#addcurso input[type="text"]::placeholder {
+    color: #8EC9E6;
+    opacity: 0.7;
+}
+
+#addcurso input[type="text"]:focus,
+#addcurso input[type="number"]:focus,
+#addcurso select:focus,
+#addcurso input[type="file"]:focus {
+    outline: none;
+    border-color: #8EC9E6;
+    box-shadow: 0 0 8px #8EC9E6;
+}
+#addcurso button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #8EC9E6;
+    color: #0F1E2B;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#addcurso button:hover {
+    background-color: #1E3A4A;
+    color: #8EC9E6;
+    border: 2px solid #8EC9E6;
+}
+#addcurso input[type="file"] {
+    padding: 8px;
+    cursor: pointer;
+}

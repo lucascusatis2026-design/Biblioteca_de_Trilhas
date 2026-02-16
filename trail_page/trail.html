@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trail.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <section class="superior">
+            <div id="principal">
+                <div id="voltar">
+                    <h1 id="titulo"></h1>
+                    <a href="/main_page/main.html">
+                        <button></button>
+                    </a>
+                </div>
+                <div id="barracarregamento">
+                    <p>X%</p>
+                    <div id="barra"></div>
+                </div>
+            </div>
+            <div class="info"></div>
+            <div class="info"></div>
+            <div class="info"></div>
+        </section>
+
+        <div class="inferior">
+            <div data-modal="modalTrail" id="adicionar-etapa" class="abrir" onclick="abrirModal()"><p>+</p></div>
+        </div>
+        
+<!--modal-->     
+<!--     
+        <div id="addcurso">
+                <form>
+                    <h1>Criar nova Etapa</h1>
+                    <div>
+                        <label>Qual o nome:</label>
+                        <input type="text" placeholder="Escreva o titulo" id="inputtitulo" required>
+                    </div>
+                    <input type="file" id="fileinput" accept="image/*">
+                    <div>
+                        <label for="">Escolha o tipo:</label>
+                        <select name="" id="" id="selecttipo" required>
+                            <option value="" selected disabled>Selecione o tipo</option>
+                            <option value="Livro">Livro</option>
+                            <option value="Playlist">Playlist</option>
+                            <option value="Artigo/Documentação">Artigo/Documentação</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">O numero de paginas/videos</label>
+                        <input type="number" id="inputnumero" min="1" required>
+                    </div>
+                    <div>
+                        <label for="">Meta de videos/paginas diários</label>
+                        <input type="number" id="inputmeta" min="0" required>
+                    </div>
+                    <div>
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+        </div>
+    -->
+
+    </div>
+
+    <script src="trail.js"></script>
+</body>
+</html>

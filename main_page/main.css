@@ -1,0 +1,243 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Inter';
+}
+
+body{
+    color: #fff;
+
+}
+/*
+Construção do fundo da página principal
+*/
+#wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0F1E2B;
+}
+
+.topo{
+    width: 100%;
+    min-height: 60px;
+    background-color: #162C3A;
+}
+.menu-trilha{
+    width: calc(100% - 60px);
+    flex: 1;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #162C3A;
+}
+.menu-conteudo{
+    width: calc(100% - 60px);
+    margin: 0 0 30px 30px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.divisoes{
+    width: 32%;
+    aspect-ratio: 1.1/0.85;
+    border-radius: 10px;
+    background-color: #162C3A;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/*
+Configurações nave main
+*/
+
+
+
+/*
+Configurações seção da trilha main
+*/
+.adicionar{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #1E3A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.adicionar:hover{
+    background-color: #8EC9E6;
+    cursor: pointer;
+    color: #0F1E2B;
+}
+.adicionar p{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#modal-background{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0F1E2BBB;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal{
+    padding: 20px;
+    background-color: #0F1E2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 10px;
+    border: 2px solid #8EC9E6;
+}
+#modal form{
+    background-color: #162C3A;
+    padding: 15px;
+    border-radius: 10px;
+}
+#modal form input{
+    background-color: #1E3A4A;
+    color: #607E8F;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin:10px 0 10px 0;
+}
+#modal form button{
+    background-color: #8EC9E6;
+    color: #0F1E2B;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold
+}
+#modal form button:hover{
+    background-color: #7AB8D0;
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+Configurações seção inferior main
+*/
+#div-dados-cima{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(50%);
+    margin-bottom: 15px;
+}
+.quadrado{
+    height: 100%;
+    flex: 1;
+    background-color: #1E3A4A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quadrado-direita{
+    margin-left: 20px;
+}
+
+#div-dados-baixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;   
+    background-color: #1E3A4A;
+    height: calc(50%); 
+    border-radius: 10px;
+}
+
+
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+#tarefatexto{
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    background-color: #1E3A4A;
+}
+#data-enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#data-enviar input{
+    border-radius: 3px;
+    border: none;
+    margin: 0 10px;
+    background-color: #1E3A4A;
+    padding-left: 10px;
+}
+input::placeholder{
+    color: #607E8F;
+}
+#data-enviar input[type="date"]{
+    margin: 0;
+    color: #607E8F;
+}
+#dataenviar select{
+    width: 150px;
+    background-color: #1E3A4A;
+    color: #607E8F;
+    border: none;
+    border-radius: 3px;
+}
+#data-enviar button {
+    background-color: #8EC9E6;
+    color: #0F1E2B;
+    border: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#data-enviar button:hover {
+    background-color: #7AB8D0;
+    cursor: pointer;
+}
+
+#local-tarefas{
+    height: calc(100% - 20px);
+    width: 100%;
+    margin: 20px 0 0 0;
+    background-color: #1E3A4A;
+    border-radius: 5px;
+}

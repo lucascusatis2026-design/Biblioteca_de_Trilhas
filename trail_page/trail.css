@@ -101,7 +101,7 @@ Linha inferior com tarefas
     margin: 30px;
     justify-content: start;
 }        
-.abrir{
+.abrir_modal{
     height: 100%;
     width: 200px;
     background-color: #162C3A;
@@ -123,7 +123,7 @@ Linha inferior com tarefas
 /*
 modal
 */
-#addcurso {
+.modal_trail_page {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -134,7 +134,7 @@ modal
     left: 0;
     z-index: 999;
 }
-#addcurso form {
+.modal_trail_page form {
     background-color: #1E3A4A;
     padding: 30px 40px;
     border-radius: 12px;
@@ -142,27 +142,27 @@ modal
     max-width: 500px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-#addcurso h1 {
+.modal_trail_page h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #8EC9E6;
     font-size: 1.8em;
 }
-#addcurso form > div {
+.modal_trail_page form > div {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-#addcurso label {
+.modal_trail_page label {
     margin-bottom: 6px;
     color: #8EC9E6;
     font-weight: 500;
     font-size: 0.95em;
 }
-#addcurso input[type="text"],
-#addcurso input[type="number"],
-#addcurso select,
-#addcurso input[type="file"] {
+.modal_trail_page input[type="text"],
+.modal_trail_page input[type="number"],
+.modal_trail_page select,
+.modal_trail_page input[type="file"] {
     padding: 10px 12px;
     border-radius: 8px;
     border: 2px solid #8EC9E6;
@@ -172,20 +172,20 @@ modal
     transition: 0.3s;
 }
 
-#addcurso input[type="text"]::placeholder {
+.modal_trail_page input[type="text"]::placeholder {
     color: #8EC9E6;
     opacity: 0.7;
 }
 
-#addcurso input[type="text"]:focus,
-#addcurso input[type="number"]:focus,
-#addcurso select:focus,
-#addcurso input[type="file"]:focus {
+.modal_trail_page input[type="text"]:focus,
+.modal_trail_page input[type="number"]:focus,
+.modal_trail_page select:focus,
+.modal_trail_page input[type="file"]:focus {
     outline: none;
     border-color: #8EC9E6;
     box-shadow: 0 0 8px #8EC9E6;
 }
-#addcurso button {
+.modal_trail_page button {
     padding: 12px;
     border-radius: 8px;
     border: none;
@@ -196,12 +196,12 @@ modal
     cursor: pointer;
     transition: 0.3s;
 }
-#addcurso button:hover {
+.modal_trail_page button:hover {
     background-color: #1E3A4A;
     color: #8EC9E6;
     border: 2px solid #8EC9E6;
 }
-#addcurso input[type="file"] {
+.modal_trail_page input[type="file"] {
     padding: 8px;
     cursor: pointer;
 }

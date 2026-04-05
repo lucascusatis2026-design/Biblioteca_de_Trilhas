@@ -59,7 +59,7 @@ Configurações nave main
 /*
 Configurações seção da trilha main
 */
-.adicionar{
+[data-modal=modal_main_page]{
     height: 100%;
     width: 20%;
     border-radius: 10px;
@@ -70,12 +70,12 @@ Configurações seção da trilha main
     text-decoration: none;
     color: white;
 }
-.adicionar:hover{
+[data-modal=modal_main_page]:hover{
     background-color: #8EC9E6;
     cursor: pointer;
     color: #0F1E2B;
 }
-.adicionar p{
+[data-modal=modal_main_page] p{
     font-size: 40px;
     font-weight: 200;
 }

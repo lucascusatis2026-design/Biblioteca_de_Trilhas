@@ -30,13 +30,13 @@
         </section>
 
         <div class="inferior">
-            <div data-modal="modalTrail" id="adicionar-etapa" class="abrir" onclick="abrirModal()"><p>+</p></div>
+            <div id="adicionar-etapa" class="abrir_modal" data-modal="modal_trail_page"><p>+</p></div>
         </div>
         
 <!--modal-->     
-<!--     
-        <div id="addcurso">
-                <form>
+ 
+        <div id="addcurso" class="modal_trail_page" data-modal="modal_trail_page">
+                <form id="form-etapa">
                     <h1>Criar nova Etapa</h1>
                     <div>
                         <label>Qual o nome:</label>
@@ -45,7 +45,7 @@
                     <input type="file" id="fileinput" accept="image/*">
                     <div>
                         <label for="">Escolha o tipo:</label>
-                        <select name="" id="" id="selecttipo" required>
+                        <select name="" id="selecttipo" required>
                             <option value="" selected disabled>Selecione o tipo</option>
                             <option value="Livro">Livro</option>
                             <option value="Playlist">Playlist</option>
@@ -65,10 +65,10 @@
                     </div>
                 </form>
         </div>
-    -->
+
 
     </div>
 
-    <script src="trail.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

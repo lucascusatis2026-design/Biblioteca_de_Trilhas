@@ -81,6 +81,11 @@ formEtapa.addEventListener("submit", function(e) {
 
     document.getElementById("addcurso").style.display = "none";
 
+    ///Criar elemento dentro da classe inferior
+    let etapa = document.createElement("div");
+    let inferior = document.querySelector(".inferior");
+    etapa.classList = "etapa";
+    inferior.prepend(etapa);
 })
 
 /// Assinatura da trilha atual

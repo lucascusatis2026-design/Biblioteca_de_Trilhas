@@ -101,7 +101,7 @@ Linha inferior com tarefas
     margin: 30px;
     justify-content: start;
 }        
-.abrir_modal{
+.abrir_modal, .etapa{
     height: 100%;
     width: 200px;
     background-color: #162C3A;
@@ -111,8 +111,9 @@ Linha inferior com tarefas
     align-items: center;
     font-size: 50px;
     font-weight: 100px;
+    margin-right: 10px;
 }
-#adicionar-etapa:hover{
+#adicionar-etapa:hover .etapas{
     background-color: #8EC9E6;
     cursor: pointer;
     color: #0F1E2B;
